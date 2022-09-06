@@ -7,6 +7,5 @@ import com.hg.crud.models.ProductDTO;
 
 @Repository
 public interface IProductDAO extends MongoRepository<ProductDTO, String> {
-	
-	
+
 }

@@ -14,18 +14,18 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 @EnableSwagger2
 public class CrudApplication {
 
-	@Bean
-	  public Docket productsApi() {
-	    return new Docket(DocumentationType.SWAGGER_2)
-	        .select()
-	          .apis(RequestHandlerSelectors.any())
-	          .paths(PathSelectors.any())
-	          .build();
-	}
-	
-	public static void main(String[] args) {
+    @Bean
+    public Docket productsApi() {
+        return new Docket(DocumentationType.SWAGGER_2)
+                .select()
+                .apis(RequestHandlerSelectors.any())
+                .paths(PathSelectors.any())
+                .build();
+    }
 
-		SpringApplication.run(CrudApplication.class, args);
-	}
+    public static void main(String[] args) {
+
+        SpringApplication.run(CrudApplication.class, args);
+    }
 
 }
